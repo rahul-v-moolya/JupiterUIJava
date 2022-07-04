@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 import io.appium.java_client.AppiumDriver;
 
-public class HomePage extends BasePage {
+public class HomePage {
 	
 	public final By startButton = By.xpath("//android.widget.TextView[@text=\"Start\"]");
 	public final By allowButton = By.xpath("//android.widget.TextView[@text=\"Allow\"]");
@@ -54,9 +54,9 @@ public class HomePage extends BasePage {
 	public final By insightsText = By.xpath("//android.widget.TextView[@text=\"Insights\"]");
 	///
 	
-	public HomePage(AppiumDriver driver) {
-		super(driver);
-		// TODO Auto-generated constructor stub
-	}
+//	public HomePage(AppiumDriver driver) {
+//		super(driver);
+//		// TODO Auto-generated constructor stub
+//	}
 
 }

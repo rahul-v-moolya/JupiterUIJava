@@ -1,4 +1,6 @@
-package scenarios.stepDefinitions;
+/**
+ package scenarios.stepDefinitions;
+
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
@@ -13,7 +15,8 @@ public class SettingsSteps {
 	BasePage basePage;
 	SettingsPage settingsPage;
 	
-	public SettingsSteps(TestContext context) {
-		settingsPage = new SettingsPage(context.driver);
-	}
+//	public SettingsSteps(TestContext context) {
+//		settingsPage = new SettingsPage(context.driver);
+//	}
 }
+**/

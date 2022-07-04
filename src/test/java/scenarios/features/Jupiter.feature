@@ -21,16 +21,17 @@ Feature: Jupiter Application
 	
 	@positive @C15110
 	Scenario:	 Check whether the displayed CTA home page design is navigating to the respective page
-	When Complete Login Process
-#	Then Tap on Hamurger icon navigates to App settings screen
-#	And Tap on Rewards icon navigates to rewards home page
-#	And Tap on Total account balance navigates to Networth page
-#	And Tap on Deposit money CTA navigates to deposit screen
-#	And Tap on Savings tag and pro salary tags navigates to Account types page
-#	And Tap on VKYC prompts navigates to to respective pages
-#	And Tap on Transfers navigates to Payments page
-#	And Tap on Money navigates to Money page
-#	And Tap on Cards navigates to Cards page
+	When Launch Jupiter Application
+	And Complete Login Process
+	Then Tap on Hamurger icon navigates to App settings screen
+	And Tap on Rewards icon navigates to rewards home page
+	And Tap on Total account balance navigates to Networth page
+	And Tap on Deposit money CTA navigates to deposit screen
+	And Tap on Savings tag and pro salary tags navigates to Account types page
+	And Tap on VKYC prompts navigates to to respective pages
+	And Tap on Transfers navigates to Payments page
+	And Tap on Money navigates to Money page
+	And Tap on Cards navigates to Cards page
 	And Tap on Help navigates to Help page
 
 
