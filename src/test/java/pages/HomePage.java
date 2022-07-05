@@ -52,11 +52,6 @@ public class HomePage {
 	public final By transactionSuccessfulText = By.xpath("//android.widget.TextView[@text=\"Transaction successful\"]");
 	public final By allTransactionsText = By.xpath("//android.widget.TextView[@text=\"All Transactions\"]");
 	public final By insightsText = By.xpath("//android.widget.TextView[@text=\"Insights\"]");
-	///
-	
-//	public HomePage(AppiumDriver driver) {
-//		super(driver);
-//		// TODO Auto-generated constructor stub
-//	}
+
 
 }

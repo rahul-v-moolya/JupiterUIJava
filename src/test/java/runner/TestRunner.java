@@ -16,6 +16,7 @@ import io.cucumber.java.en.When;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 import pages.AppiumBaseTests;
+import pages.BasePage.Direction;
 import pages.HomePage;
 
 @CucumberOptions(plugin = {"pretty", "html:target/cucumber/cucumber.html"}, glue = {"runner"}
@@ -99,10 +100,14 @@ public class TestRunner extends AbstractTestNGCucumberTests implements AppiumBas
 		operable.goBack();
 	}
 	
+	
 	@And("Tap on Rewards icon navigates to rewards home page")
-	public void tapOnRewardsButton() throws InterruptedException{	
+	public void tapOnRewardsButton() throws InterruptedException, IOException{	
+		System.out.println("WAITING SHELL Command");
+		Thread.sleep(10000);
 		System.out.println("Executing SHELL Command");
-		operable.scrollin();
+		
+		operable.swipeScreen(Direction.UP);
 		operable.click(homepage.rewardsButton);
 		operable.goBack();
 	}
